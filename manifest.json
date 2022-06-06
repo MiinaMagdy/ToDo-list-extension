@@ -18,12 +18,5 @@
         "16": "/icons/note16.png",
         "32": "/icons/note32.png",
         "64": "/icons/note64.png"
-    },
-    "background": {
-        "service_worker": "background.js"
-    },
-    "content_scripts": [{
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-    }]
+    }
 }
