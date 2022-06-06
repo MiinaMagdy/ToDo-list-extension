@@ -1,16 +1,23 @@
 {
-    "name": "clipaste",
+    "name": "to do me",
     "manifest_version": 3,
     "version": "1.0",
-    "description": "Clipaste is a simple and fast way to copy text to the clipboard.",
+    "description": "to do me is a simple todo list with add task button and delete checked checkbox tasks",
     "permissions": [
-        "clipboardWrite",
-        "clipboardRead",
         "storage"
     ],
     "action": {
         "default_popup": "popup.html",
-        "default_title": "generate sketch"
+        "default_icon": {
+            "16": "/icons/note16.png",
+            "32": "/icons/note32.png",
+            "64": "/icons/note64.png"
+        }
+    },
+    "icons": {
+        "16": "/icons/note16.png",
+        "32": "/icons/note32.png",
+        "64": "/icons/note64.png"
     },
     "background": {
         "service_worker": "background.js"
