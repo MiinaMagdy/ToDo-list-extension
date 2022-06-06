@@ -14,4 +14,4 @@ chrome://extensions
 - press on load unpacked
 - select the repo's directory
 - pin the extension
-here we go the extension is loaded succesfully
+- here we go the extension is loaded succesfully
