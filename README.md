@@ -14,3 +14,4 @@ make sure that developer mode is on
 then press on load unpacked
 and select the repo directory
 and here we go the extension is loaded succesfully
+don't forget to pin the extension
