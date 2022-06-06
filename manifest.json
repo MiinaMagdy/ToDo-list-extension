@@ -1,0 +1,22 @@
+{
+    "name": "clipaste",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "Clipaste is a simple and fast way to copy text to the clipboard.",
+    "permissions": [
+        "clipboardWrite",
+        "clipboardRead",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "generate sketch"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }]
+}
