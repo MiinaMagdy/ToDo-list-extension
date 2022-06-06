@@ -10,8 +10,8 @@ git clone https://github.com/MinaPhoenix/ToDo-list-extension.git
 ```
 chrome://extensions
 ```
-- make sure that developer mode is on
-- press on load unpacked
+- make sure that developer mode is on (upper right of the page)
+- press on load unpacked (upper left of the page)
 - select the repo's directory
 - pin the extension
 - here we go the extension is loaded succesfully
