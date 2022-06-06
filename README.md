@@ -10,8 +10,8 @@ go to address bar of chrome browser and write
 ```
 chrome://extensions
 ```
-make sure that developer mode is on
-then press on load unpacked
-and select the repo directory
-and here we go the extension is loaded succesfully
-don't forget to pin the extension
+- make sure that developer mode is on
+- press on load unpacked
+- select the repo directory
+- pin the extension
+- here we go the extension is loaded succesfully
