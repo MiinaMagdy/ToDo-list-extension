@@ -2,7 +2,7 @@
 function notInList(val) {
     var items = document.querySelectorAll('li');
     for (var i = 0; i < items.length; i++) {
-        if (items[i].children[1].innerText == val) {
+        if (items[i].innerHTML == val) {
             return false;
         }
     }
@@ -13,7 +13,9 @@ window.onload=function(){
     
     chrome.storage.sync.get(['key'], function(result) {
         console.log('Value currently is ');
-        document.querySelector('#set').innerHTML = result.key;
+        if (result.key != undefined) {
+                document.querySelector('#set').innerHTML = result.key;
+        }
     });
     
     let button = document.getElementById('addTask');
@@ -30,9 +32,8 @@ window.onload=function(){
             var li = document.createElement('li');
             let checkBoxInput = document.createElement('input');
             let taskLabel = document.createElement('label');
-            taskLabel.innerHTML = task;
             checkBoxInput.setAttribute('type', 'checkbox');
-            li.appendChild(checkBoxInput);
+            taskLabel.innerHTML = checkBoxInput.outerHTML + task;
             li.appendChild(taskLabel);
             taskList.appendChild(li);
         }
