@@ -2,7 +2,7 @@
 function notInList(val) {
     var items = document.querySelectorAll('li');
     for (var i = 0; i < items.length; i++) {
-        if (items[i].innerHTML == val) {
+        if (items[i].innerText == val) {
             return false;
         }
     }
@@ -43,6 +43,13 @@ window.onload=function(){
             console.log(value);
         });
     }
+
+    let task = document.querySelector('#taskInput');
+    task.addEventListener('keypress', function(e) {
+        if (e.keyCode == 13) {
+            addTask();
+        }
+    });
 
     let checkBoxes = document.querySelector('ul');
     checkBoxes.addEventListener('change', function(e) {
